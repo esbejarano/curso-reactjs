@@ -7,7 +7,23 @@ function Related(props) {
     return (
         <div className='Related'>
             <img src={logo} width={250} />
+            <br />
+            <ul>
+            {
+                props.relateds.map(
+                    (item) => {
+                        return (
+                            <li className="Related-text">
+                                {item}
+                            </li>
+                        )
+                    }
+                )
+                
+            }
+            </ul>
         </div>
+        
     );
 }
 
